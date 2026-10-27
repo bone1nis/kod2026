@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Врата · Расшифровка символов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+
+    <div class="scene">
+      <img class="scene__bg" src="img/bg.svg" alt="Каменные врата с тремя камнями">
+      <div class="scene__light"></div>
+
+      <div class="glyph glyph--1">
+        <span class="glyph__word">Ты</span>
+        <img class="glyph__img" src="img/glyph-1.svg" alt="Символ 1">
+      </div>
+      <div class="glyph glyph--2">
+        <span class="glyph__word">всё</span>
+        <img class="glyph__img" src="img/glyph-2.svg" alt="Символ 2">
+      </div>
+      <div class="glyph glyph--3">
+        <span class="glyph__word">сможешь</span>
+        <img class="glyph__img" src="img/glyph-3.svg" alt="Символ 3">
+      </div>
+
+      <p class="message">Ты всё сможешь!</p>
+    </div>
+
+    <!-- панель Артефакта -->
+    <div class="panel">
+      <div class="panel__info">
+        <span class="panel__label">Артефакт</span>
+        <span class="panel__status">Готов к сканированию</span>
+      </div>
+      <div class="progress">
+        <span class="progress__cell"></span>
+        <span class="progress__cell"></span>
+        <span class="progress__cell"></span>
+      </div>
+      <button class="scan-btn" type="button">Сканировать символы</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
