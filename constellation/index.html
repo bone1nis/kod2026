@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сокровищница · Симметрия созвездия</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+
+    <div class="scene">
+      <img class="scene__bg" src="img/bg.svg" alt="Дверь сокровищницы">
+      <div class="scene__shade"></div>
+
+      <div class="stars" id="stars"></div>
+
+      <p class="message" id="message"></p>
+    </div>
+
+    <div class="panel">
+      <div class="panel__info">
+        <span class="panel__label">Созвездие</span>
+        <span class="panel__status" id="status">Готово к проверке</span>
+      </div>
+      <div class="dropdown" id="dropdown">
+        <button class="dropdown__btn" id="tests-btn" type="button" aria-haspopup="listbox" aria-expanded="false">Готовые наборы</button>
+        <ul class="dropdown__list" id="tests" role="listbox" hidden></ul>
+      </div>
+      <input class="code-input" id="code" type="text" inputmode="numeric" autocomplete="off" placeholder="Свой код: 2 5 7 5 2" aria-label="Свой набор символов">
+      <button class="calc-btn" id="calc" type="button">Рассчитать</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
